@@ -1,0 +1,84 @@
+
+$background: #A26ADE;
+$select-color: #fff;
+$select-background: #A26ADE;
+$select-width: 300px;
+$select-height: 40px;
+
+#section-9 {
+
+  .section-content-wrapper {
+    display: none;
+  }
+
+  .section-content-text {
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    top: 100px;
+    left: 55vw;
+  }
+
+  .select-hidden {
+    display: none;
+    visibility: hidden;
+    padding-right: 10px;
+  }
+  .select {
+    position: absolute;
+    top: 95px;
+    left: 64.5vw;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $select-color;
+    width: $select-width;
+  }
+  .select-styled {
+    margin-left: 15px;
+    padding-bottom: 5px;
+    position: relative;
+    bottom: -5px;
+    text-align: left;
+    padding-left: 10px;
+    min-height: 23px;
+    transition: all 0.2s ease-in;
+      }
+
+  .loading-bar {
+    width: 290px;
+    height: 2px;
+    background: #ffffff;
+    position: absolute;
+    top: 120px;
+    left: 65vw;
+  }
+
+  .select-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #A26ADE;
+    li {
+      margin: 0;
+      padding: 18px 24px;
+      text-align: left;
+      transition: all 0.15s ease-in;
+      &:hover {
+        color: $select-background;
+        background: $select-color;
+      }
+      &[rel="hide"] {
+        display: none;
+      }
+    }
+  }
+}

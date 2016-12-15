@@ -1,0 +1,143 @@
+body, html {
+    color: #ffffff;
+}
+
+.step {
+    background-color: #ffffff;
+}
+
+/*
+    SPLASHSCREEN
+    INTRODUCTION
+*/
+#section-0 {
+    path, circle {
+        fill: #ffffff;
+    }
+}
+
+#introduction-wrapper {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: $color3;
+}
+
+#gradient-background {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, $color3 0%, $color4 55%, $color1 100%);
+}
+
+/*
+    TUTORIAL
+*/
+#tutorial-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.blur {
+    filter: blur(7px);
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, .5);
+        pointer-events: none;
+    }
+}
+
+.workshop-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/workshop/images/background.png');
+    background-size: cover;
+    z-index: -1;
+}
+
+#section-4 {
+    //&::before, &::after {
+    //    display: block;
+    //    content: '';
+    //    position: absolute;
+    //    top: 0;
+    //    left: 0;
+    //    right: 0;
+    //    bottom: 0;
+    //    width: 100%;
+    //    height: 100%;
+    //    pointer-events: none;
+    //    transition: opacity $transition-duration-long $transition-ease;
+    //}
+    //
+    //&::after {
+    //    background: $color3;
+    //    opacity: 1;
+    //}
+    //
+    //&::before {
+    //    background: linear-gradient(135deg, $color3 0%, $color4 55%, $color1 100%);
+    //    opacity: 1;
+    //}
+    //
+    //&.transition-in::after {
+    //    opacity: 0;
+    //}
+}
+
+#section-5 {
+    background: $color4;
+    //&::before, &::after {
+    //    display: block;
+    //    content: '';
+    //    position: absolute;
+    //    top: 0;
+    //    left: 0;
+    //    right: 0;
+    //    bottom: 0;
+    //    width: 100%;
+    //    height: 100%;
+    //    pointer-events: none;
+    //    transition: opacity $transition-duration-long $transition-ease;
+    //}
+    //
+    //&::after {
+    //    background: linear-gradient(135deg, $color3 0%, $color4 55%, $color1 100%);
+    //    opacity: 1;
+    //}
+    //
+    //&::before {
+    //    background: $color1;
+    //    opacity: 1;
+    //}
+    //
+    //&.transition-in::after {
+    //    opacity: 0;
+    //}
+}
+
+/*
+    QUESTIONNAIRE
+*/

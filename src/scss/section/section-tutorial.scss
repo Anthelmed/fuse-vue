@@ -1,0 +1,39 @@
+#tutorial-wrapper {
+    display: none;
+}
+
+.tutorial {
+    color: #3D3D3D;
+
+    .tutorial-title {
+        display: block;
+        color: #858585;
+        font-family: $font-serif;
+        font-size: 29px;
+        line-height: 39px;
+        height: 35px;
+        overflow: hidden;
+    }
+
+    .tutorial-text {
+        display: block;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        height: 20px;
+        overflow: hidden;
+    }
+
+    .drag-wrapper {
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 170px);
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    img {
+        margin: 0 auto;
+    }
+}

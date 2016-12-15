@@ -1,0 +1,24 @@
+.header-form-steps {
+    padding: 0;
+    list-style-type: none;
+
+    .step {
+        display: block;
+        position: relative;
+        right: 0;
+        width: 23px;
+        height: 1px;
+        opacity: 0.3;
+        margin: 22px 0 22px auto;
+        transition: width $transition-duration-short $transition-ease;
+
+        &.active {
+            width: 33px;
+            opacity: 1;
+        }
+    }
+}
+
+body.transition-out .header-form-steps .step {
+    width: 0;
+}

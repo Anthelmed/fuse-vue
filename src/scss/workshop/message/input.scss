@@ -1,0 +1,49 @@
+#message-input {
+  position: absolute;
+  left: 130px;
+  width: 140px;
+  height: 46px;
+  border: 1px solid #858585;
+  border-radius: 23px;
+  border-bottom-left-radius: 0;
+  background-color: transparent;
+  padding: 10px;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transform: translate3D(0, 0, 0);
+
+  input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 46px;
+    color: #BFBFBF;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+
+    &:focus {
+      color: #858585;
+    }
+
+    &[placeholder]:focus::-webkit-input-placeholder {
+      transition: opacity $transition-duration-short $transition-ease;
+      opacity: 0;
+    }
+  }
+
+  .message-input-background {
+    position: absolute;
+    top: 0;
+    left: -46px;
+    width: 46px;
+    height: 46px;
+    border-radius: 23px;
+  }
+}

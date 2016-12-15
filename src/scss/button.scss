@@ -1,0 +1,25 @@
+.button {
+  position: relative;
+  min-width: 100px;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #3D3D3D;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #858585;
+  border-radius: 15px;
+  padding: 0 30px;
+}
+
+.button-round {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font-size: 14px;
+  color: #3D3D3D;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #858585;
+  border-radius: 50%;
+}

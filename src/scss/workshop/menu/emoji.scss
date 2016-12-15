@@ -1,0 +1,72 @@
+#menu-emoji {
+  button {
+    width: 43px;
+    height: 43px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+
+    img, svg {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 43px;
+      height: 43px;
+      transition: opacity $transition-duration-short $transition-ease;
+    }
+
+    &.close {
+      svg {
+        opacity: 1;
+      }
+      img {
+        opacity: 0;
+      }
+    }
+
+    &.open {
+      svg {
+        opacity: 0;
+      }
+      img {
+        opacity: 1;
+      }
+    }
+  }
+
+  #emojis {
+    .emoji {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      transform: scale(0);
+      transform-origin: bottom center;
+
+      svg {
+        width: 43px;
+        height: 43px;
+      }
+
+      &:nth-child(1) {
+        bottom: 58px * 5;
+      }
+
+      &:nth-child(2) {
+        bottom: 58px * 4;
+      }
+
+      &:nth-child(3) {
+        bottom: 58px * 3;
+      }
+
+      &:nth-child(4) {
+        bottom: 58px * 2;
+      }
+
+      &:nth-child(5) {
+        bottom: 58px;
+      }
+    }
+  }
+}

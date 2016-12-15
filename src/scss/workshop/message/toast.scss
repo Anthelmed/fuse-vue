@@ -1,0 +1,22 @@
+.message-toast {
+  position: absolute;
+  top: -110%;
+  left: -110%;
+  height: 32px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: lowercase;
+  padding: 0 20px;
+  border-radius: 16px;
+  opacity: 0;
+  z-index: 9;
+  transition: top $transition-duration-short $transition-ease, left $transition-duration-short $transition-ease, opacity $transition-duration-short $transition-ease;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,124 @@
+.drag-wrapper {
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+}
+
+.draggable {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    background-color: #f4f3f4;
+    border-radius: 50%;
+    //top: calc(50% - 34px/2);
+    //left: calc(50% - 34px/2);
+    transition: width $transition-duration-short $transition-ease, height $transition-duration-short $transition-ease;
+
+    //&::before {
+    //    box-sizing: border-box;
+    //    display: block;
+    //    content: '';
+    //    position: absolute;
+    //    top: 50%;
+    //    left: 50%;
+    //    width: 51px;
+    //    height: 51px;
+    //    border: 2px solid #ffffff;
+    //    //background-color: #f4f3f4;
+    //    border-radius: 50%;
+    //    transform: translateX(-50%) translateY(-50%);
+    //    transition: width $transition-duration-short $transition-ease, height $transition-duration-short $transition-ease;
+    //}
+
+    &.show-over {
+        width: 55px;
+        height: 55px;
+    }
+
+    &:active::before {
+        width: 34px;
+        height: 34px;
+    }
+}
+
+.knob {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 314px;
+    height: 314px;
+    margin: 0 auto;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+
+    .draggable {
+        position: relative;
+        top: 50%;
+        left: -15px;
+    }
+}
+
+.drag-target {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    border: 2px dashed #f4f3f4;
+    border-radius: 50%;
+}
+
+.drag-target-wrapper {
+
+  position: absolute;
+  height: auto;
+  width: 100px;
+
+  .drag-target {
+    position: relative;
+    margin: 0 auto;
+    width: 54px;
+    height: 54px;
+    border: 2px dashed #f4f3f4;
+    border-radius: 50%;
+  }
+
+  .drag-target-text {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    bottom: -15px;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+
+.drag-target.bottom {
+  bottom: 80px;
+}
+
+.draggable-ring {
+  box-sizing: border-box;
+  height: 45px;
+  width: 45px;
+  border: 2px solid #F4F3F4;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  pointer-events: none;
+  transform: translate3D(-50%, -50%, 0) scale(.5);
+}
+
+#section-8 {
+  .draggable {
+    background: #F4F3F4;
+    cursor: pointer;
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    border-radius: 50%;
+  }
+}

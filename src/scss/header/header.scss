@@ -1,0 +1,77 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    z-index: 99;
+    pointer-events: none;
+
+    > * {
+      pointer-events: auto;
+  }
+}
+
+.header-logo {
+    display: none;
+    position: relative;
+    top: 53px;
+    width: 95px;
+
+    path, circle {
+        fill: #ffffff;
+        transition: fill $transition-duration-short $transition-ease;
+    }
+}
+
+body[data-active-section="11"],
+body[data-active-section="12"],
+body[data-active-section="13"],
+body[data-active-section="14"],
+body[data-active-section="15"],
+body[data-active-section="16"],
+body[data-active-section="17"] {
+
+    .header-logo {
+        path, circle {
+            fill: #858585;
+        }
+    }
+}
+
+.header-nav {
+    position: absolute;
+    top: 210px;
+    display: none;
+}
+
+.header-about {
+    position: absolute;
+    right: 35px;
+    bottom: 88px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transform: rotateZ(-90deg);
+    display: none;
+}
+
+.header-explore {
+    position: absolute;
+    right: 35px;
+    top: 88px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    transform: rotateZ(-90deg);
+    display: none;
+}
+
+.header-elements-wrapper {
+    display: none;
+}
+
+@import "header-form-steps";

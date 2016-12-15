@@ -1,0 +1,36 @@
+.center {
+    display: block;
+    margin: auto;
+}
+
+.top {
+    position: absolute;
+    top: $margin;
+}
+
+.left {
+    position: absolute;
+    left: $margin;
+}
+
+.right {
+    position: absolute;
+    right: $margin;
+}
+
+.bottom {
+    position: absolute;
+    bottom: $margin;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}

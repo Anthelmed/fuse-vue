@@ -1,0 +1,22 @@
+.section-subtitle {
+    position: relative;
+    margin-top: 35px;
+    text-align: left;
+    transition: opacity $transition-duration-short $transition-ease;
+
+    span {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+}
+
+//[id^="section-"] {
+//    &.transition-in .section-subtitle {
+//        opacity: 1;
+//    }
+//
+//    &.transition-out .section-subtitle {
+//        opacity: 0;
+//    }
+//}

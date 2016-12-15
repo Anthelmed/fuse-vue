@@ -1,0 +1,16 @@
+.section-line {
+    position: absolute;
+    height: 1px;
+    border: none;
+    transition: width $transition-duration-short $transition-ease;
+}
+
+[id^="section-"] {
+    &.transition-in .section-line {
+        width: 356px;
+    }
+
+    &.transition-out .section-line {
+        width: 0;
+    }
+}

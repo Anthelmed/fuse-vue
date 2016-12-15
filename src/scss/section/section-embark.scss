@@ -1,0 +1,40 @@
+.embark {
+    .embark-title {
+        display: block;
+        font-family: $font-serif;
+        font-size: 29px;
+        line-height: 39px;
+        height: 35px;
+        overflow: hidden;
+    }
+
+    .embark-text {
+        display: block;
+        font-size: 12px;
+        line-height: 24px;
+        text-transform: uppercase;
+        height: 18px;
+        overflow: hidden;
+    }
+
+    .drag-wrapper {
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 170px);
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.launch {
+
+    .drag-wrapper {
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 170px);
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

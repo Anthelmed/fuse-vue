@@ -1,0 +1,19 @@
+.introduction {
+    .introduction-logo svg {
+        width: 525px;
+        height: auto;
+    }
+}
+
+#section-1, #section-2, #section-3, #section-4, #section-5 {
+    display: none;
+
+    .line-1, .line-2, .line-3, .line-4 {
+        display: inline-block;
+        position: relative;
+    }
+}
+
+#introduction-wrapper, #gradient-background {
+    display: none;
+}

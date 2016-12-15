@@ -1,0 +1,26 @@
+#loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color3;
+  z-index: 999;
+  opacity: 1;
+  transition: opacity $transition-duration-long $transition-ease;
+
+  .animated-loader {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    svg {
+      width: 70px!important;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+#expose-timer {
+  position: absolute;
+  right: 50px;
+  font-family: $font-serif;
+  font-weight: 400;
+  overflow: hidden;
+  bottom: $margin;
+  height: 41px;
+  font-size: 53px;
+  line-height: 63px;
+  color: #999999;
+  opacity: 0;
+  pointer-events: none;
+}
+#expose-timer-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  height: 5px;
+}

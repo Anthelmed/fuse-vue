@@ -1,0 +1,49 @@
+.transition-wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 1!important;
+}
+
+.transition-text-wrapper {
+    display: block;
+    position: relative;
+}
+
+.transition-text {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+}
+
+/*
+    QUESTIONNAIRE
+*/
+
+#section-5, #section-6 {
+    path {
+        fill: $color1;
+    }
+}
+
+#section-7 path {
+    fill: $color2;
+}
+
+#section-8 path {
+    fill: $color3;
+}
+
+#section-9 path {
+    fill: $color4;
+}
+
+#section-10 path {
+    fill: $color5;
+}
